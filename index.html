@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寵物飼養問卷調查</title>
+    
+    <!-- FAVIOCN -->
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+
+    <!-- 透過 link 標籤，載入 CSS 檔案 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style>
+        .recl div.ball {
+            width:100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            
+            display: inline-block;
+        }
+    </style> -->
+
+</head>
+<body>
+    <div class="bg">
+    <!-- form 表單 -->
+    <!-- 語法: <form action="送出目的地" method="資料傳送方式"> -->
+    <!-- form 表單裡面的"value值"是要傳送去給"後端"的 -->
+    <form action="">
+        <!-- header封面圖片 -->
+        <div class="header">
+            <!-- img "alt" 指當圖片失效時，所顯示的文字(圖片替代文字)-->
+             <img src="image/GoGo-Phot-Contest-02-scaled.jpg" alt="">
+        </div>
+        <!-- 問卷標題 -->
+        <h1>寵物飼養問卷調查</h1>
+        <!-- 問卷題目Q1 -->
+        <div class="qu1">
+        <!-- &nbsp; 空白  &lt; <小於  &gt; >大於 -->
+            <h3>1.&nbsp;您的性別:</h3>
+                <input type="radio" name="gender" id="man" value="man">
+                <label for="man">
+                    <img src="image/man.png" alt="man">
+                </label>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="woman" value="woman">
+                <label for="woman">
+                    <img src="image/female.png" alt="woman">
+                </label>
+        </div>
+        <hr>
+        <!-- 問卷題目Q2 -->
+        <div class="qu2">
+            <h3>2.&nbsp;您的年齡層是:</h3>
+                <input type="radio" name="age" id="two" value="two">
+                <label for="two">20歲以下</label>
+                <input type="radio" name="age" id="three" value="three">
+                <label for="three">21~30歲</label>
+                <input type="radio" name="age" id="four" value="four">
+                <label for="four">31~40歲</label>
+                <input type="radio" name="age" id="five" value="five">
+                <label for="five">41~50歲</label>
+                <input type="radio" name="age" id="sex" value="sex">
+                <label for="sex">51~60歲</label>
+                <input type="radio" name="age" id="seven" value="seven">
+                <label for="seven">60歲以上</label>
+        </div>
+        <!-- 問卷題目Q3 -->
+        <div class="qu3">
+            <h3>3.&nbsp;您的職業:</h3>
+                <input list="job">
+                    <datalist id="job" name="job">
+                        <option value="學生">學生</option>
+                        <option value="上班族(週休二日)">上班族(週休二日)</option>
+                        <option value="軍警">軍警</option>
+                        <option value="醫護人員">醫護人員</option>
+                        <option value="金融保險業">金融保險業</option>
+                        <option value="服務業">服務業</option>
+                        <option value="農、林、漁、木等傳統產業">農、林、漁、木等傳統產業</option>
+                        <option value="家管">家管</option>
+                        <option value="待業中">待業中</option>
+                        <option value="其他">其他</option>
+                    </datalist>
+        </div>
+        <hr>
+        <!-- 問卷題目Q4 -->
+        <div class="qu4">
+            <h3>4.&nbsp;是否有養過寵物呢&nbsp;?</h3>
+                <input type="radio" name="pet" id="yes" value="yes"> 
+                <label for="yes">
+                    <img src="image/yes.png" alt="yes">
+                </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="pet" id="no" value="no">
+                <label for="no">
+                    <img src="image/cancel.png" alt="no">
+                </label>&nbsp;&nbsp;&nbsp;
+                    <div class="quno">*→回答"否"請跳到第6題
+                    </div>
+        </div>
+         <!-- 問卷題目Q5 -->
+        <div class="qu5">
+            <h3>5.&nbsp;飼養什麼寵物呢&nbsp;?</h3>
+                <div class="quno">*(可複選&nbsp;)
+                </div>
+                <br>
+                <br>
+                <input type="checkbox" name="animal" id="dog" value="dog" title="dog-狗">
+                <label for="dog">
+                    <img src="image/puppy.jpg" alt="dog-狗" title="dog-狗">
+                </label>
+                <input type="checkbox" name="animal" id="cat" value="cat" title="cat-貓">
+                <label for="cat"> 
+                    <img src="image/cat.jpg" alt="cat-貓" title="cat-貓">
+                </label>
+                <input type="checkbox" name="animal" id="bird" value="bird" title="bird-鳥類">
+                <label for="bird"> 
+                    <img src="image/bird.jpg" alt="bird-鳥類" title="bird-鳥類">
+                </label>
+                <input type="checkbox" name="animal" id="fish" value="fish" title="fish-魚">
+                <label for="fish"> 
+                    <img src="image/fish.jpg" alt="fish-魚" title="fish-魚">
+                </label>
+                <br>
+                <br>
+                <input type="checkbox" name="animal" id="turtle" value="turtle" title="turtle-烏龜">
+                <label for="turtle">
+                    <img src="image/turtle.jpg" alt="turtle-烏龜" title="turtle-烏龜">
+                </label>
+                <input type="checkbox" name="animal" id="rabbit" value="rabbit" title="rabbit-兔子">
+                <label for="rabbit"> 
+                    <img src="image/rabbit.jpg" alt="rabbit-兔子" title="rabbit-兔子">
+                </label>
+                <input type="checkbox" name="animal" id="lizard" value="lizard" title="lizard-蜥蜴">
+                <label for="lizard"> 
+                    <img src="image/lizard.jpg" alt="lizard-蜥蜴" title="lizard-蜥蜴">
+                </label>
+                <input type="checkbox" name="animal" id="mouse" value="mouse" title="mouse-寵物鼠">
+                <label for="mouse"> 
+                    <img src="image/mouse.jpg" alt="mouse-寵物鼠" title="mouse-寵物鼠">
+                </label>
+                <br>
+                <br>
+                <br>
+                <input type="checkbox" name="animal" id="other" value="other">
+                <label for="other">
+                     <!--b:粗體 -->
+                    <b>其他...</b>
+                </label>
+        </div>
+        <hr>
+        <!-- 問卷題目Q6 -->
+        <div class="qu6">
+            <h3>6.&nbsp;為什麼"想要"養寵物呢&nbsp;?&nbsp;請說明一個理由~</h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;為什麼"不想要"養寵物呢&nbsp;?&nbsp;請簡略敘述之~</h3>
+            <!-- placeholder:呈現預設的樣式 -->
+            <textarea name="account" id="acco" cols="60" rows="7" placeholder="請輸入文字">12345</textarea>
+            <!-- <textarea name="account" id="acco" cols="60" rows="7" placeholder="請輸入文字">123</textarea> -->
+        </div>
+         <!-- 問卷題目Q7 -->
+        <div class="qu7">
+            <h3>7.&nbsp;如有養寵物的話，一個月大約會在寵物身上花多少錢呢?</h3>
+            
+                <input type="radio" name="cash" id="thousand" value="thousand">
+                    <label for="thousand">1000元以內</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="cash" id="three-thousand" value="three-thousand">
+                    <label for="three-thousand">1000~3000元</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="cash" id="five-thousand" value="five-thousand">
+                    <label for="five-thousand">5000元以上</label>
+        </div>
+        <hr>
+        <!-- 問卷題目Q8 -->
+        <div class="qu8">
+            <h3>8.&nbsp;飼養寵物之後，覺得對您的生活有什麼影響呢?請簡略說明之~</h3>
+            <!-- placeholder:呈現預設的樣式 -->
+            <textarea name="account" id="acco" cols="80" rows="8" placeholder="請輸入文字"></textarea>
+        </div>
+        <!-- 問卷題目Q9 -->
+         <div class="qu9">
+            <h3>9.&nbsp;您覺得寵物在您心目中佔了什麼樣的地位呢&nbsp;?</h3>
+           
+                <input type="radio" name="standing" id="friend" value="friend">
+                    <label for="friend">
+                        <img src="image/friend.png" alt="friend">&nbsp;朋友
+                    </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="standing" id="family" value="family">
+                    <label for="family">
+                        <img src="image/family.png" alt="family">&nbsp;家人
+                    </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="standing" id="lover" value="lover">
+                    <label for="lover">
+                        <img src="image/lover.png" alt="lover">&nbsp;情人
+                    </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="standing" id="rear" value="rear">
+                    <label for="rear">
+                        <img src="image/rear.png" alt="rear">&nbsp;寵物
+                    </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="standing" id="host" value="host">
+                    <label for="host">
+                        <img src="image/host.png" alt="host">&nbsp;寵物才是主人
+                    </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="standing" id="more" value="more">
+                    <label for="more">
+                        <img src="image/other.png" alt="more">&nbsp;其他
+                    </label>
+        </div>
+        <hr>
+        <!-- 送出、清除按鈕 -->
+            <div class="recl">
+                <input type="submit" name="sure" id="sure" value="提交">
+                    <img src="image/ok.png" alt="ok">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" name="clear" id="clear" value="清除">
+                    <img src="image/reset.png" alt="clear">
+                <!-- <div class="ball"> -->
+                    <!-- <img src="image/ok.png" alt="ok"> -->
+                <!-- </div>     -->
+            </div>
+    </form>
+    </div>
+</body>
+</html>
